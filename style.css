@@ -255,6 +255,33 @@ body {
     color:#edca57;
 }
 
+#countdown {
+  text-align: center;
+  background: #fffaf0;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 16px;
+  border: 2px solid red;
+  max-width: 600px;
+}
+
+#countdown h2 {
+  color: #d62828;
+  margin-bottom: 20px;
+}
+
+#countdown .time {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+}
+
+#countdown span b {
+  display: block;
+  font-size: 36px;
+  color: #D4AF37;
+}
+
 /* Tablet & mobile */
 @media (max-width: 1024px) {
 
@@ -311,8 +338,7 @@ body {
         font-size: 14px;
     }
 
-    .card > div,
-    .tet-card > div {
+    .card > div, .tet-card > div {
         flex: 0 1 100%;
     }
 
@@ -324,6 +350,33 @@ body {
     .li-xi img {
         width: 100%;
         max-width: 100%;
+    }
+
+    #countdown {
+        padding: 20px 10px;
+        margin: 20px auto;
+    }
+
+    #countdown h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    #countdown .time {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #countdown .time span {
+        width: 45%;
+        font-size: 16px;
+    }
+
+    #countdown .time span b {
+        font-size: 32px;
+        display: block;
     }
 }
 
@@ -345,5 +398,29 @@ body {
 
     .footer p {
         font-size: 13px;
+    }
+
+    #countdown {
+        padding: 15px 10px;
+        border-radius: 15px;
+    }
+
+    #countdown h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    #countdown .time {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    #countdown .time span {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    #countdown .time span b {
+        font-size: 28px;
     }
 }
