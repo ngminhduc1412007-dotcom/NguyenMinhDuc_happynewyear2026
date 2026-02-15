@@ -239,6 +239,123 @@ body {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 } 
 
+.button {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.button h3 {
+    color: #d62828;
+    font-size: 25px;
+}
+
+.button a {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #d62828;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 50px;
+    color: #fffaf0;
+    background-color: #d62828;
+    font-size: 18px;
+    font-weight: bold;
+    transition: transform 0.3s;
+    cursor:pointer;
+}
+
+.button a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.lixi-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.lixi-section h2 {
+    color: #d62828;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.wheel-container {
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 0 auto 30px;
+}
+
+.wheel {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 8px solid #d62828;
+    transition: transform 4s ease-out;
+    background: conic-gradient(
+        #d62828 0deg 60deg,
+        #D4AF37 60deg 120deg,
+        #d62828 120deg 180deg,
+        #D4AF37 180deg 240deg,
+        #d62828 240deg 300deg,
+        #D4AF37 300deg 360deg
+    );
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.arrow {
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 30px;
+    color: #d62828;
+}
+
+#spinBtn {
+    padding: 15px 35px;
+    border-radius: 25px;
+    border: none;
+    background-color: #d62828;
+    color: #fffaf0;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#spinBtn:hover {
+    background-color: #D4AF37;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+#result {
+    margin-top: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #7d0606;
+}
+
+.claim-link {
+    display: inline-block;
+    padding: 14px 30px;
+    background: linear-gradient(45deg, #d62828, #e63946);
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.claim-link:hover {
+    background: linear-gradient(45deg, #D4AF37, #d62828);
+    transform: scale(1.05);
+}
+
 .footer {
     display: block;
     text-align: center;
@@ -378,6 +495,24 @@ body {
         font-size: 32px;
         display: block;
     }
+
+    .wheel-container {
+        width: 260px;
+        height: 260px;
+    }
+
+    .lixi-section h2 {
+        font-size: 26px;
+    }
+
+    #spinBtn {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+
+    #result {
+        font-size: 18px;
+    }
 }
 
 /* Small mobile */
@@ -422,5 +557,18 @@ body {
 
     #countdown .time span b {
         font-size: 28px;
+    }
+
+    .wheel-container {
+        width: 220px;
+        height: 220px;
+    }
+
+    .arrow {
+        font-size: 24px;
+    }
+
+    #result {
+        font-size: 16px;
     }
 }
